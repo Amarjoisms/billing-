@@ -6,24 +6,24 @@ import lombok.Setter;
 public class Bill {
     int bId;
     User user;
-    Items items;
-    int quantity;
+    Items[] items;
+ //   int quantity;
 //    int amount;
  //   int totalPrice;
 
-    public Bill(int bId, User user, Items items, int quantity) {
+    public Bill(int bId, User user, Items[] items) {
         this.bId = bId;
         this.user = user;
         this.items = items;
-        this.quantity = quantity;
+//        this.quantity = quantity;
 //        this.amount = amount;
 //        this.totalPrice = totalPrice;
     }
 
-    public int amount(){        //calculate the amount of item WRT purchased quantity
+/*    public int amount(){        //calculate the amount of item WRT purchased quantity
         int z = quantity * items.getPrice();
         return z;
-    }
+    }*/
 
 
 }
