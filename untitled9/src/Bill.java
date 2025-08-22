@@ -20,7 +20,7 @@ public class Bill {
 //        this.totalPrice = totalPrice;
     }
 
-    public int amount(){
+    public int amount(){        //calculate the amount of item WRT purchased quantity
         int z = quantity * items.getPrice();
         return z;
     }
